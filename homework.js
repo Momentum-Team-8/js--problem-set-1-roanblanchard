@@ -82,6 +82,20 @@ function lesser (x, y) {
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+function multigreeting (name, lan) {
+    if (lan === "en") {
+        return "Hello, " + name + "!"
+    } else if (lan === "es") {
+        return "¡Hola, " + name + "!"
+    } else if (lan === "fr") {
+        return "Bonjour, " + name + "!"
+    } else if (lan === "eo") {
+        return "Saluton, " + name + "!"
+    } else {
+        return
+    }
+    
+}
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
